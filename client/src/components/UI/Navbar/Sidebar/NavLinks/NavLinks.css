@@ -1,0 +1,41 @@
+@media only screen and (min-width: 1000.01px) {
+  .mobileLinks {
+    display: none;
+  }
+}
+
+.mobileLinks__profileNav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.mobileLinks__cartLogo {
+  object-fit: contain;
+  width: 28px;
+  margin-right: 15px;
+}
+
+.mobileLinks__cartLogo-amount {
+  background-color: rgb(253, 46, 115);
+  padding: 4px 10px;
+  border-radius: 50%;
+  transform: scale(0.5);
+  position: absolute;
+  top: 14px;
+  left: 39%;
+}
+
+.navlink:hover .mobileLinks__cartLogo-amount {
+  background-color: black;
+}
+
+.navlink:hover .mobileLinks__cartLogo {
+  content: url("../../NavHeader/NavLinks/cart.png");
+}
+
+@media only screen and (max-width: 330px) {
+  .mobileLinks__cartLogo-amount {
+    left: 37%;
+  }
+}

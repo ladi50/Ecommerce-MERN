@@ -1,0 +1,106 @@
+.product {
+  margin: 30px 30px 40px;
+  box-shadow: 4px 4px 10px 12px rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  background-color: white;
+  overflow: hidden;
+  width: 300px;
+  position: relative;
+}
+
+.product__card {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.product__card > img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.product__userProducts {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 40px;
+  z-index: 2;
+  display: none;
+}
+
+[id~="editIcon"],
+[id~="deleteIcon"] {
+  color: black;
+  background-color: white;
+}
+
+[id~="editIcon"]:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+[id~="deleteIcon"]:hover {
+  color: white;
+  background-color: rgb(224, 10, 10);
+}
+
+.product__viewBar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  height: 0;
+  transition: height 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__viewBar > p {
+  padding: 10px;
+  height: 100%;
+  display: block;
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: rgb(253, 46, 115);
+  color: white;
+  font-weight: 700;
+}
+
+.product__details {
+  padding: 15px 10px 10px;
+  background-color: white;
+  text-align: center;
+  border-top: 1px solid gray;
+  box-sizing: border-box;
+}
+
+.product__details > h3 {
+  color: rgb(17, 17, 17);
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+}
+
+.product__details > p {
+  color: rgb(41, 41, 41);
+  font-weight: 600;
+}
+
+.product__card:hover > .product__viewBar {
+  height: 45px;
+}
+
+.product:hover .product__backdrop,
+.product:hover .product__userProducts {
+  display: flex;
+}
+
+@media only screen and (max-width: 330px) {
+  .product {
+    margin: 30px 0 40px;
+  }
+}

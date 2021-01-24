@@ -1,0 +1,41 @@
+.flashMsg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 60.01px;
+  background-color: rgb(233, 40, 130);
+  color: white;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.flashMsg > span {
+  cursor: pointer;
+}
+
+.flashMsg__animation-enter {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.flashMsg__animation-enter-active {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease-out;
+}
+
+.flashMsg__animation-exit {
+  visibility: visible;
+  opacity: 1;
+}
+
+.flashMsg__animation-exit-active {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+}

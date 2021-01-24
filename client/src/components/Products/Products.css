@@ -1,0 +1,19 @@
+.products {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 1800px) {
+  .products {
+    margin-top: 400px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .products {
+    width: 100%;
+  }
+}

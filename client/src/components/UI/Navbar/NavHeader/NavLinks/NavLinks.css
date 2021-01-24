@@ -1,0 +1,146 @@
+.navlinks,
+.navlinks > div {
+  display: flex;
+}
+
+.navlinks__cartLogo {
+  object-fit: contain;
+  width: 28px;
+  margin-right: 15px;
+}
+
+.navlinks__cartLogo-amount {
+  background-color: rgb(253, 46, 115);
+  padding: 4px 8px;
+  border-radius: 50%;
+  transform: scale(0.7);
+  position: absolute;
+  top: 2px;
+  left: 35px;
+}
+
+.navlinks__profileDiv {
+  position: relative;
+}
+
+.navlinks__profileHeader {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navlinks__profileHeader:hover {
+  background-color: #580477;
+}
+
+.navlinks__profileHeader > button {
+  color: white;
+  font-weight: 600;
+  display: flex;
+  padding: 0 20px;
+  background-color: transparent;
+  width: 132px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  border-top: 2px solid transparent;
+  border-bottom: 4px solid transparent;
+  outline-width: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.MuiSvgIcon-root.navlinks__profileHeader-rotateArrow {
+  transform: rotateZ(180deg);
+  transition: transform 0.15s ease-out;
+}
+.MuiSvgIcon-root.navlinks__profileHeader-rotateArrowBack {
+  transform: rotateZ(0);
+  transition: transform 0.15s ease-out;
+}
+
+.navlinks__profileMenu {
+  position: absolute;
+  bottom: calc(-100% - 210px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 2px solid rgb(167, 165, 165);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  box-shadow: 4px 3px 14px 2px rgb(54, 54, 54), 0px -3px 14px 2px rgb(54, 54, 54);
+  background-color: rgb(253, 46, 115);
+}
+
+.navlinks__profileMenu > *:not(*:last-child) {
+  border-bottom: 1px solid rgb(243, 16, 92);
+}
+
+.navlinks__profileMenu > * {
+  margin: 0;
+  width: 132px;
+}
+
+.navlinks__profileMenu > * > a {
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.navlinks__profileMenu > * > a:hover {
+  border-top: 2px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.navlinks__profileMenu > *:hover {
+  background-color: rgb(224, 20, 88);
+}
+
+.navlinks__profileMenu > button {
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  color: white;
+  background-color: rgb(243, 16, 92);
+  border: none;
+  outline-width: 0;
+  cursor: pointer;
+  border-top: 2px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 10px 15px;
+  margin: 0;
+}
+
+.navlinks__showProfileMenu-enter {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.navlinks__showProfileMenu-enter-active {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease-out;
+}
+
+.navlinks__showProfileMenu-exit {
+  visibility: visible;
+  opacity: 1;
+}
+
+.navlinks__showProfileMenu-exit-active {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s ease-out;
+}
+
+@media only screen and (max-width: 1000px) {
+  .navlinks {
+    display: none;
+  }
+}

@@ -1,0 +1,8 @@
+.navBlock {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  height: 60px;
+  display: block;
+  margin-bottom: 50px;
+}

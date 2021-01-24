@@ -1,0 +1,47 @@
+.navlink {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 15px;
+  position: relative;
+}
+
+.navlink > a {
+  color: white;
+  font-weight: 600;
+  display: flex;
+  padding: 0 20px;
+  width: fit-content;
+  height: 100%;
+  align-items: center;
+  border-top: 2px solid transparent;
+  border-bottom: 4px solid transparent;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1000.01px) {
+  .navlink > a:hover,
+  .navlink > a.active {
+    border-bottom: 4px solid rgb(253, 46, 115);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .navlink > a {
+    padding: 20px 0;
+    border: none;
+    color: black;
+    font-size: 25px;
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .navlink > a:hover,
+  .navlink > a:active,
+  .navlink > a:focus {
+    border: none;
+    background-color: rgb(253, 46, 115);
+    color: white;
+  }
+}

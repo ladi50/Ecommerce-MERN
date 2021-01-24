@@ -1,0 +1,79 @@
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+.cartItem__image {
+  max-width: 200px;
+}
+
+.cartItem__image > img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.cartItem__details > h3 {
+  font-size: 1.5rem;
+}
+
+.cartItem__quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cartItem__quantity > p:first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0 5px;
+}
+
+.cartItem__quantity > p:last-child {
+  font-size: 1.2rem;
+  margin: 0 5px;
+}
+
+.cartItem__price > p {
+  color: rgb(37, 34, 34);
+}
+
+.cartItem__remove > button {
+  outline-width: 0;
+  border-radius: 4px;
+  color: black;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 6px 10px 6px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartItem__remove > button:hover {
+  background-color: rgb(231, 16, 16);
+  color: white;
+}
+
+.cartItem__remove > button > .MuiSvgIcon-root {
+  margin-right: 3px;
+}
+
+@media only screen and (min-width: 1700px) {
+  .cartItem {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .cartItem {
+    flex-direction: column;
+  }
+
+  .cartItem > * {
+    margin-bottom: 20px;
+  }
+}

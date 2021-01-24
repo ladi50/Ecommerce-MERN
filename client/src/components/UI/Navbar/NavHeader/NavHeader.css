@@ -1,0 +1,30 @@
+.navheader {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navheader__logo > a {
+  padding: 10px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.navheader__logo > a > img {
+  width: 40px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.navheader__logo > * {
+  color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .navheader {
+    width: 95%;
+  }
+}

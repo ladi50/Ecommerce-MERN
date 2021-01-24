@@ -1,0 +1,129 @@
+.profile {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.profile__image {
+  flex: 0.45;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.profile__image > button,
+.profile__image > img {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.profile__image > img {
+  border-radius: 50%;
+  height: 220px;
+  width: 220px;
+}
+
+.profile__image > button {
+  margin-top: 5px;
+  padding: 8px 0;
+  border-radius: 40px;
+  border: 2px solid transparent;
+  outline-width: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  max-width: 220px;
+  min-width: 218px;
+  box-sizing: border-box;
+}
+
+.profile__image > button:hover {
+  transform: scale(1.04);
+  border: 2px solid black;
+}
+
+.profile__details {
+  flex: 0.55;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.profile__details > div {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 0 15px;
+}
+
+.profile__details > div > label {
+  margin-bottom: 15px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.profile__details > div > input {
+  border-radius: 40px;
+  padding: 10px 10px 10px 20px;
+  border: 3px solid transparent;
+  outline-width: 0;
+  font-size: 1.1rem;
+}
+
+.profile__details > div > input:focus {
+  background-color: lavender;
+}
+
+@media only screen and (min-height: 1100px) {
+  .profile {
+    margin: 180px auto 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .profile {
+    margin-bottom: 200px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .profile__image > img,
+  .profile__image > button {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .profile__details > div {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .profile {
+    flex-direction: column;
+    flex-wrap: unset;
+    width: 98%;
+  }
+
+  .profile__image {
+    margin: 0 auto 60px;
+  }
+
+  .profile__image > img {
+    margin: 0 auto 20px;
+    width: 180px;
+    height: 180px;
+  }
+
+  .profile__details > div {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,99 @@
+.cart {
+  background-color: whitesmoke;
+  width: 80%;
+  margin: 100px auto 150px;
+}
+
+.cart__button {
+  width: 60%;
+  margin: 0 auto 140px;
+}
+
+.cart__empty {
+  width: 80%;
+  margin: 140px auto 30vh;
+  text-align: center;
+  font-size: 3rem;
+  background-color: #fd2e73;
+  color: white;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 20px 3px black;
+}
+
+.cart__empty > a {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: bold;
+  transition: color 0.15s ease-out;
+}
+
+.cart__empty > a:hover {
+  color: black;
+}
+
+@media only screen and (min-width: 2000px) {
+  .cart__empty {
+    margin-bottom: 40vh;
+  }
+  
+  .cart {
+    margin-top: 20vh;
+    margin-bottom: 350px;
+  }
+}
+
+@media only screen and (min-width: 1010px) and (max-width: 1999px) {
+  .cart__empty {
+    margin-bottom: 40vh;
+  }
+
+  .wishlist__emptyDiv {
+    height: 100px;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1999px) {
+  .cart {
+    margin-bottom: 270px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .cart {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .cart__empty {
+    width: 95%;
+    font-size: 2rem;
+  }
+
+  .cart__empty > a {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .cart__button {
+    width: 95%;
+  }
+
+  .cart__empty {
+    margin-bottom: 50vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .cart__empty {
+    width: 95%;
+    font-size: 1.6rem;
+  }
+
+  .cart__empty > a {
+    font-size: 1.2rem;
+  }
+}

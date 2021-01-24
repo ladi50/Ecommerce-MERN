@@ -1,0 +1,48 @@
+.footer__div {
+  position: sticky;
+  bottom: 0;
+  margin-top: 60px;
+  padding-top: 150px;
+  height: fit-content;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: rgb(19, 18, 18);
+  width: 100%;
+  z-index: 1;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media only screen and (min-height: 1400px) {
+  .footer__div {
+    height: 55vh;
+  }
+}
+
+@media only screen and (max-height: 1399px) and (min-height: 1000px) {
+  .footer__div {
+    height: 48vh;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .footer__div {
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer {
+    padding: 20px 0;
+    font-size: 0.8rem;
+  }
+}

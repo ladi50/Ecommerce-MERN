@@ -1,0 +1,50 @@
+.burger {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  right: 30px;
+  height: 60px;
+  width: 60px;
+  box-sizing: border-box;
+  padding: 10px;
+  z-index: 5;
+}
+
+.burger__child {
+  width: 80%;
+  height: 4px;
+  background-color: white;
+  margin: 7px auto;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+  position: relative;
+}
+
+.burger__child:first-child.active {
+  transform: rotateZ(45deg);
+  top: 11px;
+  background-color: black;
+}
+
+.burger__child:nth-child(2).active {
+  width: 0;
+  background-color: black;
+}
+
+.burger__child:last-child.active {
+  transform: rotateZ(-45deg);
+  bottom: 11px;
+  background-color: black;
+}
+
+@media only screen and (min-width: 1000.01px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .burger {
+    right: 5px;
+  }
+}
